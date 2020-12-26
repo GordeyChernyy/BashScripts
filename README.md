@@ -31,5 +31,7 @@ gh auth login
 `alias gitunity=C:\Users\AMD_GAMING\Documents\BashScripts\gitUnity.sh $*`
 
 ## Usage
-`cd /UnityProjects/Project`
-`gitunity ProjectName "project description"`
+```
+cd /UnityProjects/Project
+gitunity ProjectName "project description"
+```
