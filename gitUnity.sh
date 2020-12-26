@@ -68,9 +68,13 @@ sysinfo.txt
 crashlytics-build.properties" > $ignorePath
 
 git init
+
 git add .
+
 git commit -m "first commit"
+
 # more commands here: https://cli.github.com/manual/gh_repo_create
-gh repo create $appName --description $description --private --confirm
+gh repo create $appName --private --description $description --confirm
+
 git branch -M main
 git push -u origin main
