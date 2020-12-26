@@ -28,7 +28,7 @@ gh auth login
 ```
 3. Add alias
 
-`alias gitunity=C:\Users\AMD_GAMING\Documents\BashScripts\gitUnity.sh GitHubUserName $*`
+`alias gitunity=C:\Users\AMD_GAMING\Documents\BashScripts\gitUnity.sh $*`
 
 ## Usage
 ```
