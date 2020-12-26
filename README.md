@@ -1,3 +1,5 @@
+This bash script creates new private GitHub project from Unity folder with .gitignore and adds it to your GitHub account using command line
+
 ## Installation
 
 1. Install github CLI https://cli.github.com/
@@ -26,4 +28,10 @@ gh auth login
 ```
 3. Add alias
 
-`alias gitUnity=C:\Users\AMD_GAMING\Documents\BashScripts\gitUnity.sh $*`
+`alias gitunity=C:\Users\AMD_GAMING\Documents\BashScripts\gitUnity.sh $*`
+
+## Usage
+```
+cd /UnityProjects/Project
+gitunity ProjectName "project description"
+```
