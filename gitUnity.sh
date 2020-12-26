@@ -1,6 +1,7 @@
 #variables
-appName="$1"
-description="$2"
+userName="$1"
+appName="$2"
+description="$3"
 
 workingDir="$PWD"
 ignoreFileName="/.gitignore"
@@ -76,5 +77,5 @@ git branch -M main
 
 gh repo create $appName --private --description $description --confirm
 
-git remote add origin https://github.com/GordeyChernyy/$appName.git
+git remote add origin https://github.com/$userName/$appName.git
 git push -u origin main
