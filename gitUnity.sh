@@ -6,6 +6,9 @@ workingDir="$PWD"
 ignoreFileName="/.gitignore"
 ignorePath=$workingDir$ignoreFileName
 
+# more commands here: https://cli.github.com/manual/gh_repo_create
+
+git init
 #create gitignore
 echo "# This .gitignore file should be placed at the root of your Unity project directory
 #
@@ -67,14 +70,11 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties" > $ignorePath
 
-git init
-
 git add .
-
 git commit -m "first commit"
+git branch -M main
 
-# more commands here: https://cli.github.com/manual/gh_repo_create
 gh repo create $appName --private --description $description --confirm
 
-git branch -M main
+git remote add origin https://github.com/GordeyChernyy/$appName.git
 git push -u origin main
